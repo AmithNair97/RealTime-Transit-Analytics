@@ -1,0 +1,11 @@
+{"timestamp":"2025-08-03T10:32:13.498564","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-08-03T10:32:13.498787","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/daily_snapshot_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-08-03T10:32:13.596653Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-03T10:32:13.596754Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-03T10:32:13.596810Z","level":"info","event":"Current task name:save_snapshot","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-03T10:32:13.596850Z","level":"info","event":"Dag name:daily_snapshot_dag","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-03T10:32:13.602121","level":"warning","event":"/opt/airflow/dags/daily_snapshot_dag.py:16: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.\n  df = pd.read_sql(query, conn)\n","logger":"py.warnings"}
+{"timestamp":"2025-08-03T10:32:13.611113","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator"}
+{"timestamp":"2025-08-03T10:32:13.622615Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-03T10:32:13.622733Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-03T10:32:13.622792Z","level":"info","event":"Task operator:<Task(PythonOperator): save_snapshot>","chan":"stdout","logger":"task"}

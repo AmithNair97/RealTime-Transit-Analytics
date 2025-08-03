@@ -5,17 +5,14 @@ A platform that ingests real-time (or simulated) public transit data, processes 
 
 ## 💡 Key Features
 - Real-time data ingestion (Kafka)
-- ETL & transformation pipeline (PySpark)
-- Data storage (PostgreSQL or Snowflake)
-- Analytics dashboards (React or Streamlit)
+- Apache Airflow for piple generation
+- Data storage (PostgreSQL)
+- Analytics dashboards (Streamlit)
 - Optional ML delay forecasting
 
 ## 🧱 Tech Stack
-- Python, Apache Kafka, PySpark
+- Python, Apache Kafka, Apache Airflow
 - PostgreSQL / Snowflake
-- FastAPI (backend API)
 - React.js or Streamlit (frontend)
-- Docker, GitHub Actions, AWS (for deployment)
 
-## 🧪 Status
-🚧 Work In Progress — Phase 0
+
