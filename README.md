@@ -33,42 +33,4 @@ This project is a real-time (or simulated) public transit analytics platform tha
 git clone https://github.com/your-username/transit-analytics-platform.git
 cd transit-analytics-platform
 
-### 2. Start Kafka, Zookeeper, PostgreSQL, and Airflow
-bash
-Copy
-Edit
-docker-compose up -d --build
-✅ Ensure services like Kafka, Zookeeper, and Airflow are running using:
-docker ps
 
-3. Simulate GPS Data (Kafka Producer)
-Open a new terminal:
-
-cd airflow/data_pipeline
-python simulate_gps_stream.py
-
-4. Run Kafka Consumer to PostgreSQL
-In a separate terminal:
-python kafka_consumer_to_postgres.py
-You can also run kafka_consumer_to_csv.py to log output to CSV instead.
-
-5. Launch the Streamlit Dashboard
-In a new terminal:
-
-cd streamlit_dashboard
-streamlit run app.py
-
-Open browser at: http://localhost:8501
-
-📦 Folder Structure
-
-├── airflow/
-│   └── data_pipeline/
-│       ├── simulate_gps_stream.py
-│       ├── kafka_consumer.py
-│       ├── kafka_consumer_to_postgres.py
-│       └── kafka_consumer_to_csv.py
-├── streamlit_dashboard/
-│   └── app.py
-├── docker-compose.yml
-└── README.md
