@@ -33,7 +33,7 @@ This project is a real-time (or simulated) public transit analytics platform tha
 git clone https://github.com/your-username/transit-analytics-platform.git
 cd transit-analytics-platform
 
-2. Start Kafka, Zookeeper, PostgreSQL, and Airflow
+### 2. Start Kafka, Zookeeper, PostgreSQL, and Airflow
 bash
 Copy
 Edit
